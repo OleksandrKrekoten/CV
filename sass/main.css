@@ -325,7 +325,13 @@ img {
 }
 
 .hero {
+  font-family: 'Ubuntu', sans-serif;
   padding: 20px 0;
+  height: 100vh;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  -webkit-animation: background 20s linear infinite alternate both;
+          animation: background 20s linear infinite alternate both;
 }
 
 @media screen and (min-width: 768px) {
@@ -340,28 +346,65 @@ img {
   }
 }
 
-.hero__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@-webkit-keyframes background {
+  0% {
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, left top, right top, from(#8EC5FC), to(#E0C3FC));
+    background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+  }
+  50% {
+    background-color: #0093E9;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#E0C3FC), to(#80D0C7));
+    background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
+  }
+  100% {
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, right top, left top, from(#80D0C7), to(#E0C3FC));
+    background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
+  }
+}
+
+@keyframes background {
+  0% {
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, left top, right top, from(#8EC5FC), to(#E0C3FC));
+    background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+  }
+  50% {
+    background-color: #0093E9;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#E0C3FC), to(#80D0C7));
+    background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
+  }
+  100% {
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, right top, left top, from(#80D0C7), to(#E0C3FC));
+    background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .img__border {
   display: block;
   padding-top: 50px;
-  border: 10px solid #ffffff;
+  margin-right: 60px;
   -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   overflow: hidden;
-  -webkit-animation: ava-animate 5s infinite alternate;
-          animation: ava-animate 5s infinite alternate;
+  -webkit-animation: color-change-2x 20s linear infinite alternate both, ava-animate 10s infinite alternate;
+          animation: color-change-2x 20s linear infinite alternate both, ava-animate 10s infinite alternate;
 }
 
 @media screen and (min-width: 768px) {
@@ -372,30 +415,73 @@ img {
 
 @media screen and (min-width: 1200px) {
   .img__border {
-    width: 550px;
+    width: 350px;
   }
-}
-
-.color-change-2x {
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-          animation: color-change-2x 2s linear infinite alternate both;
 }
 
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea;
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, left top, right top, from(#8EC5FC), to(#E0C3FC));
+    background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+  }
+  50% {
+    background-color: #0093E9;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#E0C3FC), to(#80D0C7));
+    background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
   }
   100% {
-    background: #b22cff;
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, right top, left top, from(#80D0C7), to(#E0C3FC));
+    background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
   }
 }
 
 @keyframes color-change-2x {
   0% {
-    background: #19dcea;
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, left top, right top, from(#8EC5FC), to(#E0C3FC));
+    background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+  }
+  50% {
+    background-color: #0093E9;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#E0C3FC), to(#80D0C7));
+    background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
   }
   100% {
-    background: #b22cff;
+    background-color: #8EC5FC;
+    background-image: -webkit-gradient(linear, right top, left top, from(#80D0C7), to(#E0C3FC));
+    background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
+  }
+}
+
+@-webkit-keyframes ava-animate {
+  0% {
+    border-radius: 73% 27% 52% 48% / 64% 23% 77% 36%;
+  }
+  40% {
+    border-radius: 73% 27% 22% 78% / 64% 68% 32% 36%;
+  }
+  60% {
+    border-radius: 25% 75% 74% 26% / 24% 30% 70% 76%;
+  }
+  100% {
+    border-radius: 65% 35% 34% 66% / 24% 46% 54% 76%;
+  }
+}
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 73% 27% 52% 48% / 64% 23% 77% 36%;
+  }
+  40% {
+    border-radius: 73% 27% 22% 78% / 64% 68% 32% 36%;
+  }
+  60% {
+    border-radius: 25% 75% 74% 26% / 24% 30% 70% 76%;
+  }
+  100% {
+    border-radius: 65% 35% 34% 66% / 24% 46% 54% 76%;
   }
 }
 
@@ -407,5 +493,41 @@ img {
   .hero__img {
     width: 270px;
   }
+}
+
+.hero__title {
+  position: relative;
+  display: inline-block;
+  font-family: 'Titan One', cursive;
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__title::before {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  content: "<h1>";
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 18px;
+  color: #515152;
+  text-transform: lowercase;
+}
+
+.hero__title::after {
+  position: absolute;
+  bottom: -30px;
+  content: "</h1>";
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 18px;
+  color: #515152;
+  text-transform: lowercase;
+}
+
+.title-accent--curent {
+  margin-right: 28px;
 }
 /*# sourceMappingURL=main.css.map */
