@@ -1,0 +1,71 @@
+.hero {
+    padding: 20px 0;
+    @media screen and (min-width:$tablet) {
+    padding: 40px 0;
+    }
+    @media screen and (min-width:$desktop) {
+        padding: 60px 0;
+    }
+}
+
+
+
+.hero__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero__img-box {}
+
+.img__border {
+    display: block;
+    padding-top: 50px;
+    border: 10px solid #ffffff;
+    box-shadow: 2px 5px 10px
+    rgba(0, 0, 0, 0.5);
+   
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    overflow: hidden;
+    animation: ava-animate 5s infinite alternate ;
+    @media screen and (min-width:$tablet) {
+            width: 370px;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            width: 550px;
+        }
+}
+
+.color-change-2x {
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+
+.hero__img { 
+    margin: 0 auto;
+    @media screen and (min-width:$tablet) {
+            
+        }
+    
+        @media screen and (min-width:$desktop) {
+            width: 270px;
+        }
+    
+}
+
+.hero__content {}
+
+.hero__title {}
+
+.title-accent {}
