@@ -63,7 +63,7 @@
     
     overflow: hidden;
     
-    animation: color-change-2x 20s linear infinite alternate both, ava-animate 15s infinite alternate ;
+    animation: color-change-2x 20s linear infinite alternate both, ava-animate 10s infinite alternate ;
     
     @media screen and (min-width:$tablet) {
             width: 370px;
@@ -76,47 +76,47 @@
 
 
 
-@keyframes color-change-2x {
-0% {
-        background-color: #8EC5FC;
-        background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+ @keyframes color-change-2x {
+ 0% {
+             background-color: #8EC5FC;
+             background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
 
-    }
+     }
 
-    50% {
-        background-color: #0093E9;
-        background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
+     50% {
+         background-color: #0093E9;
+         background-image: linear-gradient(to top, #E0C3FC 0%, #80D0C7 100%);
 
-    }
+     }
 
-    100% {
-        background-color: #8EC5FC;
-        background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
+     100% {
+         background-color: #8EC5FC;
+         background-image: linear-gradient(to left, #80D0C7 0%, #E0C3FC 100%);
 
-    }
-}
+     }
+ }
 @keyframes ava-animate{
     0% {
-        border-radius:30% 70% 54% 46% / 20% 41% 59% 80%;
+        border-radius:34% 66% 64% 36% / 30% 42% 58% 70%;
     
         }
      20% {
-        border-radius: 58% 42% 54% 46% / 71% 41% 59% 29%;
+        border-radius:57% 43% 73% 27% / 45% 57% 43% 55%
         
                  }
      
      40% {
-        border-radius: 50% 50% 30% 70% / 37% 36% 64% 63%;
+        border-radius: 69% 31% 79% 21% / 56% 63% 37% 44%;
         
                   }
          
                   
         70% {
-         border-radius:58% 42% 19% 81% / 71% 78% 22% 29%;}
+         border-radius:57% 43% 42% 58% / 28% 23% 77% 72%}
                 
       
     100% {
-         border-radius:69% 31% 44% 56% / 71% 23% 77% 29%;
+         border-radius:26% 74% 27% 73% / 52% 42% 58% 48%;
                                                                                                                                                 
                                                                                                                                                                                                                                                                                                   
                                                                                                                                                                                                                                                                                         
