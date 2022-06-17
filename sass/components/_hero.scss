@@ -62,7 +62,8 @@
    
     
     overflow: hidden;
-    animation: color-change-2x 20s linear infinite alternate both, ava-animate 10s infinite alternate ;
+    
+    animation: color-change-2x 20s linear infinite alternate both, ava-animate 15s infinite alternate ;
     
     @media screen and (min-width:$tablet) {
             width: 370px;
@@ -95,20 +96,31 @@
     }
 }
 @keyframes ava-animate{
-    0%{
-        border-radius:73% 27% 52% 48% / 64% 23% 77% 36%;
+    0% {
+        border-radius:30% 70% 54% 46% / 20% 41% 59% 80%;
+    
+        }
+     20% {
+        border-radius: 58% 42% 54% 46% / 71% 41% 59% 29%;
         
-    }
-    40%{
-  border-radius: 73% 27% 22% 78% / 64% 68% 32% 36%;
-    }
-   60%{
-border-radius:25% 75% 74% 26% / 24% 30% 70% 76%;
-   }
-   100%{
-border-radius:65% 35% 34% 66% / 24% 46% 54% 76%;
-   }
-}
+                 }
+     
+     40% {
+        border-radius: 50% 50% 30% 70% / 37% 36% 64% 63%;
+        
+                  }
+         
+                  
+        70% {
+         border-radius:58% 42% 19% 81% / 71% 78% 22% 29%;}
+                
+      
+    100% {
+         border-radius:69% 31% 44% 56% / 71% 23% 77% 29%;
+                                                                                                                                                
+                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                        
+}}
 
 
 .hero__img { 
@@ -159,7 +171,7 @@ font-family: 'La Belle Aurore',
         text-transform: lowercase;
 }
 .title-accent {
-    
+   
     
 }
 .title-accent--curent{
