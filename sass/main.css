@@ -509,6 +509,12 @@ img {
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  padding: 100px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-animation: color-change-2x 20s linear infinite alternate both;
+          animation: color-change-2x 20s linear infinite alternate both;
   color: #ffffff;
 }
 
@@ -526,6 +532,7 @@ img {
 .hero__title::after {
   position: absolute;
   bottom: -30px;
+  right: -25px;
   content: "</h1>";
   font-family: 'La Belle Aurore', cursive;
   font-size: 18px;

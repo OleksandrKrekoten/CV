@@ -145,7 +145,10 @@
         line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        
+        padding: 100px;
+        border-radius: 30px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        animation: color-change-2x 20s linear infinite alternate both;
         color: #ffffff;
 }
 
@@ -163,6 +166,7 @@
 .hero__title::after{
     position: absolute;
     bottom: -30px;
+    right: -25px;
 content: "</h1>";
 font-family: 'La Belle Aurore',
         cursive;
